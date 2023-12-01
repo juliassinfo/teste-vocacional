@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  
+body {
+    background-image: url('fundoquiz.png'); /* Azul claro */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+     background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+}
+/* Restante do seu código CSS permanece inalterado */
+
+  
+
+
+  #quiztexto{
+    width: 12vw;
+  
+    position: absolute;
+    margin-top: -7vh;
+    margin-left: -10vw;
+    width: 20vw;
+  }
+  
+  /* Your existing styles */
+  input[type=radio] {
+    margin-right: 15vw;
+    
+  }
+
+
+  p {
+    margin-top: 7vh;
+    font-weight: bold; 
+    font-size: 2.1vw;
+    letter-spacing: -0.10vw; /* Ajuste o valor conforme necessário */
+    color:#c40e0e;
+    margin-bottom: 6vh;
+
+    
+  }
+
+  h2{
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    color:#892626;
+    font-family: Century Gothic;
+
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw; /* Ajuste de margem inferior */
+    color: #2b4158;
+    font-size: 1.2vw;
+    height: 3vh; /* Altura fixa para o label */
+  }
+
+
+ 
+
+  
+  label:hover {
+    background-color: #d9e7e7;
+    cursor: pointer;
+    margin-right: 20px; /* Aumenta a largura do hover à direita */
+    margin-left: 3px; /* Aumenta a largura do hover à esquerda (negativo para compensar a margem à direita) */
+    width: 45vw;
+    border-radius: 1vw;
+    height: 6.5vh;
+  }
+  
+  
+  form {
+   
+    background-color: #fceeeefd; 
+    padding: 3vw 5vw; 
+    max-width: 55vw; 
+    margin: 14vh auto; 
+    border: #ccc; 
+    border-radius: 5px; 
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #caixa {
+    justify-content: space-around;
+    background-color: #c9f4f7; 
+    padding: 10px; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  
+  
+  input[type=button]:hover {
+    background-color: rgb(77, 77, 77);
+  }
+  
+  /* Estilos gerais */
+  * {
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    transition: all .5s;
+  }
+  
+  input[type=button] {
+    background-color: #000000; 
+    color: white; 
+    border: none; 
+    padding: 50px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(145, 63, 63); 
+  }
+  
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1.3vw;
+    height: 2.6vh;
+    border: 0.15vw solid rgb(34, 16, 95);
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 0.5vw; /* Reduzi a margem para evitar que o tamanho mude muito */
+}
+  
+  input[type="radio"]:checked {
+    border-color: #8b1f1f;
+  }
+  
+  input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 0.4vh auto;
+    border-radius: 50%;
+    background-color: #bc1a1a;
+  }
+  
+  
+  #btn{
+    display: block;
+    width: 20vw;
+    height: 10vh;
+    line-height: 1vh;
+    font-size: 1.4vw;
+    font-family: 'Century Gothic';
+    text-decoration: rgb(172, 177, 240);
+    color: rgb(171, 177, 255);
+    border: #58e9c5;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background-color: #c70d0d;
+    border-radius: 1vw;
+    font-weight: bold;
+    margin-left: vw;
+    padding-top: -5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vh 0 10vh;
+
+    
+  }
+  
+  
+  #btn span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  #btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #164A3F;
+    transition: all .25s;
+    border-radius: 15px;
+  }
+  
+  #btn:hover{
+    color: #4dbfd3;
+    background-color: #e75353;
+  }
+  
+  #btn:hover:after{
+    width: 100%;
+  }
+  
+  
+::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a90000; 
+    border-radius: 2px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #B8C6EE; 
+}

@@ -1,0 +1,121 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" alt="Logo do site de Teste Vocacional" width="200px" >
+    <title>Informática!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  
+       html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url(fundoInformática.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#resultado {
+    width: 1vw;
+    font-size: 4vw;
+    position: absolute;
+    font-family: 'Poppins';
+    color: #D5000F;
+    margin-top: 19vh;
+    margin-left: 25vw;
+}
+
+#textoAdm{
+    font-size: 1.3vw;
+    position: absolute;
+    font-family: 'Poppins';
+    color: #2a4a79;
+    margin-top: 33vh;
+    margin-left: 40vw;
+}
+.meu-botao {
+    margin-top: 87.5vh;
+    margin-left: 52vw;
+      display: inline-block;
+      padding: 0.9vw 4vw;
+      font-size: 1vw;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 0.5vw;
+      color: #d7dbf7;
+      background-color: #D5000F; /* Cor de fundo verde */
+      font-family: 'Poppins';
+      font-weight: bold;
+      transition: background-color 0.55s, color 0.55s;
+    }
+
+    /* Efeito de hover para mudar as cores ao passar o mouse */
+    .meu-botao:hover {
+      background-color: #f34c57; /* Cor de fundo verde mais escura no hover */
+      color: white;
+    }
+
+    .meu-botao2 {
+        position: absolute;
+    margin-top: -7vh;
+    margin-left: 65vw;
+      display: inline-block;
+      padding: 0.9vw 4vw;
+      font-size: 1vw;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 0.5vw;
+      color: #d7dbf7;
+      background-color: #D5000F; /* Cor de fundo verde */
+      font-family: 'Poppins';
+      font-weight: bold;
+      transition: background-color 0.55s, color 0.55s;
+    }
+
+    /* Efeito de hover para mudar as cores ao passar o mouse */
+    .meu-botao2:hover {
+      background-color: #f34c57; /* Cor de fundo verde mais escura no hover */
+      color: white;
+    }
+
+</style>
+</head>
+<body>
+    <h1 id="resultado"></h1>
+<div class="texto">
+        
+          <center><p id="textoAdm">Você tem um perfil incrível para a área de informática. Sua capacidade  de <br>
+           resovolver problemas e adaptar-se a novas tecnologias  destaca<br>
+          você como uma pessoa versátil e pronta para desafios. Além<br>
+         disso, sua ética profissional e disposição para aprender <br>
+         continuamente são atributos valiosos. <br><br>
+    
+
+        Esse resultado é um começo para pensar sobre futuras opções de trabalho!</p></center>
+
+    </div>
+    <div class="botão">
+        <a href="index.html" class="meu-botao">Refazer</a>
+    </div>
+    <div class="botão2">
+        <a href="fim.html" class="meu-botao2">Finalizar</a>
+    </div>
+        
+    <script>
+             
+        //Acessando o dado salvo em localStorage e atribuindo ao h1 da página
+         document.getElementById("resultado").innerHTML = localStorage.getItem('porcInfo');
+    </script>
+    
+</body>
+</html>
+    
+</body>
+</html>

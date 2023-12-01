@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" alt="Logo do site de Teste Vocacional" width="600px" >
+    <link rel="stylesheet" href="quiz.css">
+    <script src="script.js"></script>
+    <title>Hora do Quiz!</title>
+    
+      
+</head>
+
+
+
+
+<body>
+  
+    <div class="content">
+    <center><img src="quiztexto.png" id="quiztexto"></center> 
+     
+        <form>
+       
+            <p>1 - Qual palavra mais combina com você, <span id="textoRecebido"> </span>?</p>
+        
+            <label><input type="radio" class="pergunta" name="P1" value="adm">
+            Organização. </label><br>
+            <label><input type="radio" class="pergunta" name="P1" value="marketing">
+            Criatividade.  </label><br>
+            <label><input type="radio" class="pergunta" name="P1" value="comércio">
+            Estratégia.  </label><br>
+            <label><input type="radio" class="pergunta" name="P1" value="info">
+            Autodidata. </label><br>
+            <label><input type="radio" class="pergunta" name="P1" value="rh">
+            Comunicação.</label><br>
+            <label><input type="radio" class="pergunta" name="P1" value="segurança">
+            Confiável. </label><br>
+            <label><input type="radio" class="pergunta" name="P1" value="serviços">
+            Disciplina. </label>
+            <script>
+                // Captura o texto da URL
+                var parametroTexto = new URLSearchParams(window.location.search).get("texto");
+             
+                if (parametroTexto) {
+                    // Se o texto foi encontrado na URL, exibe-o
+                    var textoDecodificado = decodeURIComponent(parametroTexto);
+                    document.getElementById("textoRecebido").textContent = textoDecodificado;
+                    
+                }
+             </script>
+    
+           <center><h2>__________________________________________</h2></center>
+    
+            <p>2 -Em uma discussão, você...</p>
+        
+            <label><input type="radio" class="pergunta" name="P2" value="marketing">
+            Tenta considerar diferentes pontos de vista e encontrar soluções. </label><br>
+
+            <label><input type="radio" class="pergunta" name="P2" value="serviços">
+            Apresenta ideias inovadoras e propõe soluções criativas. </label><br>
+
+            <label><input type="radio" class="pergunta" name="P2" value="info">
+            Resolve conflitos considerando o que é certo, com medidas éticas para todos. </label><br><br>
+            <label><input type="radio" class="pergunta" name="P2" value="rh">
+            Tenta manter um ambiente harmonico, buscando entender as opiniões das pessoas.</label><br><br>
+            <label><input type="radio" class="pergunta" name="P2" value="segurança">
+            Tomaria ações para evitar problemas, sugerindo maneiras de manter tudo seguro. </label><br>
+            <label><input type="radio" class="pergunta" name="P2" value="adm">
+            Busca argumentos lógicos e objetivos para chegar a um consenso.  </label><br>
+            <label><input type="radio" class="pergunta" name="P2" value="comércio">
+            Utiliza habilidades para influenciar a opinião dos outros. </label>
+           
+              <center><h2>__________________________________________</h2></center>
+    
+            <p>3 - Você em seus relacionamentos...</p>
+        
+            <label><input type="radio" class="pergunta" name="P3" value="info">
+            Procura inovar e trazer novidades para o relacionamento. </label><br>
+            <label><input type="radio" class="pergunta" name="P3" value="rh">
+            Prioriza uma boa comunicação, promovendo o bem-estar mútuo. </label><br>
+            <label><input type="radio" class="pergunta" name="P3" value="adm">
+            Busca manter a organização na vida a dois. </label><br>
+            <label><input type="radio" class="pergunta" name="P3" value="marketing">
+            Expressa sentimentos de forma criativa, focando na conexão emocional. </label><br>
+            <label><input type="radio" class="pergunta" name="P3" value="serviços">
+            Prioriza a confiança dos dois.</label><br>
+            <label><input type="radio" class="pergunta" name="P3" value="comércio">
+            Comunicação aberta. </label><br>
+            <label><input type="radio" class="pergunta" name="P3" value="segurança">
+            Valoriza a segurança emocional e o cuidado recíproco.</label>
+           
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>4 - <span id="textoRecebido4"></span>, o que você mais valoriza?</p>
+        
+            <label><input type="radio" class="pergunta" name="P4" value="serviços">
+            Tomadas de decisões justas e conscientes no convívio diário. </label><br>
+            <label><input type="radio" class="pergunta" name="P4" value="adm">
+            A praticidade e organização nas tarefas diárias.</label><br>
+            <label><input type="radio" class="pergunta" name="P4" value="segurança">
+            O direito e bem-estar de todos. </label><br>
+            <label><input type="radio" class="pergunta" name="P4" value="info">
+            Soluções criativas e inovadoras para facilitar a vida.</label><br>
+            <label><input type="radio" class="pergunta" name="P4" value="marketing">
+            Comunicação envolvente e ideias que fazem a diferença. </label><br>
+            <label><input type="radio" class="pergunta" name="P4" value="rh">
+            Relações humanas saudáveis e equilibradas.</label><br>
+            <label><input type="radio" class="pergunta" name="P4" value="comércio">
+            Sucesso e poder. </label>
+            <script>
+                // Captura o texto da URL
+                var parametroTexto = new URLSearchParams(window.location.search).get("texto");
+             
+                if (parametroTexto) {
+                    // Se o texto foi encontrado na URL, exibe-o
+                    var textoDecodificado = decodeURIComponent(parametroTexto);
+                    document.getElementById("textoRecebido4").textContent = textoDecodificado;
+                    
+                }
+             </script>
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>5 - A sua profissão ideal é aquela que você:</p>
+        
+            <label><input type="radio" class="pergunta" name="P5" value="info">
+            Desenvolve soluções inovadoras. </label><br>
+            <label><input type="radio" class="pergunta" name="P5" value="rh">
+            Contribui com a Sociedade. </label><br>
+            <label><input type="radio" class="pergunta" name="P5" value="adm">
+            Faz as coisas acontecerem de forma organizada e eficiente. </label><br>
+            <label><input type="radio" class="pergunta" name="P5" value="comércio">
+            Explora novos horizontes. </label><br>
+            <label><input type="radio" class="pergunta" name="P5" value="serviços">
+            Ajuda a resolver questões legais de forma prática. </label><br>
+            <label><input type="radio" class="pergunta" name="P5" value="marketing">
+            Possui desafios. </label><br>
+            <label><input type="radio" class="pergunta" name="P5" value="segurança">
+            Traz Segurança. </label>
+    
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>6 - O que mais incomoda <span id="textoRecebido6"></span> é quando as pessoas:</p>
+        
+            <label><input type="radio" class="pergunta" name="P6" value="marketing">
+            Esperam resultados diferentes fazendo tudo igual. </label><br>
+            <label><input type="radio" class="pergunta" name="P6" value="comércio">
+            Demonstram preguiça ou submissão. </label><br>
+            <label><input type="radio" class="pergunta" name="P6" value="segurança">
+            Não respeitam as outras.  </label><br>
+            <label><input type="radio" class="pergunta" name="P6" value="serviços">
+            Burlam ou ignoram regras.  </label><br>
+            <label><input type="radio" class="pergunta" name="P6" value="adm">
+            Desorganizam processos e tornam tudo confuso. </label><br>
+            <label><input type="radio" class="pergunta" name="P6" value="rh">
+            Emitem opinião sem conhecer o assunto a fundo. </label><br>
+            <label><input type="radio" class="pergunta" name="P6" value="info">
+            Resistem a ideias inovadoras. </label>
+            <script>
+                // Captura o texto da URL
+                var parametroTexto = new URLSearchParams(window.location.search).get("texto");
+             
+                if (parametroTexto) {
+                    // Se o texto foi encontrado na URL, exibe-o
+                    var textoDecodificado = decodeURIComponent(parametroTexto);
+                    document.getElementById("textoRecebido6").textContent = textoDecodificado;
+                    
+                }
+             </script>
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>7 - <span id="textoRecebido7"></span>, seus amigos te descreveriam como uma pessoa:</p>
+        
+            <label><input type="radio" class="pergunta" name="P7" value="comércio">
+            Que curte saber sobre diferentes lugares. </label><br>
+            <label><input type="radio" class="pergunta" name="P7" value="segurança">
+            Atenciosa com as pessoas ao seu redor.</label><br>
+            <label><input type="radio" class="pergunta" name="P7" value="adm">
+            Organizada e prática, sempre encontrando jeitos eficientes de resolver as coisas. </label><br>
+            <label><input type="radio" class="pergunta" name="P7" value="info">
+            Apaixonada por tecnologia e sempre explorando o que rola na internet. </label><br>
+            <label><input type="radio" class="pergunta" name="P7" value="marketing">
+            Criativa e envolvida em projetos, pensando em ideias originais. </label><br>
+            <label><input type="radio" class="pergunta" name="P7" value="serviços">
+            Justa em tudo que faz. </label><br>
+            <label><input type="radio" class="pergunta" name="P7" value="rh">
+            Atenta às relações sociais, sempre pronta para ajudar e entender os outros. </label>
+            <script>
+                // Captura o texto da URL
+                var parametroTexto = new URLSearchParams(window.location.search).get("texto");
+             
+                if (parametroTexto) {
+                    // Se o texto foi encontrado na URL, exibe-o
+                    var textoDecodificado = decodeURIComponent(parametroTexto);
+                    document.getElementById("textoRecebido7").textContent = textoDecodificado;
+                    
+                }
+             </script>
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>8 - Você imagina se destacar profissionalmente:</p>
+        
+            <label><input type="radio" class="pergunta" name="P8" value="rh">
+            Por ser bastante determinado. </label><br>
+            <label><input type="radio" class="pergunta" name="P8" value="serviços">
+            Pela sua honestidade. </label><br>
+            <label><input type="radio" class="pergunta" name="P8" value="marketing">
+            Por propor novas formas de fazer as coisas. </label><br>
+            <label><input type="radio" class="pergunta" name="P8" value="comércio">
+            Pelas suas ótimas habilidades de comunicação.</label><br>
+            <label><input type="radio" class="pergunta" name="P8" value="segurança">
+            Transmitir confiança ao ambiente. </label><br>
+            <label><input type="radio" class="pergunta" name="P8" value="info">
+            Pela sua ótima capacidade de análise. </label><br>
+            <label><input type="radio" class="pergunta" name="P8" value="adm">
+            Pela sua excelência em estruturar e organizar métodos. </label>
+    
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>9 - Para você, <span id="textoRecebido9"></span>, um bom professor é aquele que:</p>
+        
+            <label><input type="radio" class="pergunta" name="P9" value="adm">
+            Prepara para ser alguém no mercado de trabalho, não apenas mais um. </label><br>
+            <label><input type="radio" class="pergunta" name="P9" value="serviços">
+            Estimula o aluno a questionar e aprofundar conhecimentos.  </label><br>
+            <label><input type="radio" class="pergunta" name="P9" value="marketing">
+            Prepara e ensina para ser alguém com foco em estratégias criativas. </label><br>
+            <label><input type="radio" class="pergunta" name="P9" value="segurança">
+            Prioriza o respeito e educação no ambiente escolar.</label><br>
+            <label><input type="radio" class="pergunta" name="P9" value="comércio">
+            Dá a chance de o aluno conhecer novas experiências. </label><br>
+            <label><input type="radio" class="pergunta" name="P9" value="info">
+            Transmite o conteúdo completo, sem deixar nada para trás. </label><br>
+            <label><input type="radio" class="pergunta" name="P9" value="rh">
+            Ajuda a identificar os interesses e talentos de seus alunos. </label>
+            <script>
+                // Captura o texto da URL
+                var parametroTexto = new URLSearchParams(window.location.search).get("texto");
+             
+                if (parametroTexto) {
+                    // Se o texto foi encontrado na URL, exibe-o
+                    var textoDecodificado = decodeURIComponent(parametroTexto);
+                    document.getElementById("textoRecebido9").textContent = textoDecodificado;
+                    
+                }
+             </script>
+    
+            <center><h2>__________________________________________</h2></center>
+    
+            <p>10 -	Quando faz um trabalho em grupo, você é aquele(a) que:</p>
+        
+            <label><input type="radio" class="pergunta" name="P10" value="marketing">
+            Propõe ideias criativas.  </label><br>
+            <label><input type="radio" class="pergunta" name="P10" value="info">
+            Analisa bem o escopo do trabalho antes de propor ações.  </label><br>
+            <label><input type="radio" class="pergunta" name="P10" value="comércio">
+            Ganha a aprovação do grupo ao demonstrar que sua ideia é mais benéfica. </label><br>
+            <label><input type="radio" class="pergunta" name="P10" value="segurança">
+            Assegura que o grupo está seguindo todo o roteiro. </label><br>
+            <label><input type="radio" class="pergunta" name="P10" value="rh">
+            Debate ideias, considerando diferentes visões.  </label><br>
+            <label><input type="radio" class="pergunta" name="P10" value="serviços">
+            Quer ir direto ao ponto.  </label><br>
+            <label><input type="radio" class="pergunta" name="P10" value="adm">
+            Lidera o grupo a agir em determinada direção.  </label>
+    
+            <center><h2>__________________________________________</h2></center>
+            <center>
+         
+            <div class="CalcularResultado">
+          <input type="button" id="btn" value="calcular resultado"> 
+      </div>
+    
+        </form>
+    
+        <br>
+       
+        <a href="rh.html" target="_blank"><h1 id="rh"></h1></a>
+        <a href="marketing.html" target="_blank"><h1 id="marketing"></h1></a>
+        <a href="adm.html" target="_blank"><h1 id="adm"></h1></a>
+        <a href="comercio.html" target="_blank"><h1 id="comércio"></h1></a>
+        <a href="segurança.html" target="_blank"><h1 id="segurança"></h1></a>
+        <a href="serviços.html" target="_blank"><h1 id="serviços"></h1></a>
+        <a href="info.html" target="_blank"><h1 id="info"></h1></a>
+
+        </center>
+    </div>
+</div>
+ 
+    <script>
+       document.getElementById("btn").onclick = function () {
+            // Oculta o conteúdo da página
+           
+      
+      // Exibir a div de carregamento
+    
+            var contAdm = 0;
+            var contMarketing = 0;
+            var contInfo = 0;
+            var contRH = 0;
+            var contServicos = 0;
+            var contSeguranca = 0;
+            var contComércio = 0;
+    
+            var radios = document.getElementsByClassName("pergunta");
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    if (radios[i].value === "adm") {
+                        contAdm++;
+                    } else if (radios[i].value === "marketing") {
+                        contMarketing++;
+                    } else if (radios[i].value === "comércio") {
+                        contComércio++;
+                    } else if (radios[i].value === "info") {
+                        contInfo++;
+                    } else if (radios[i].value === "rh") {
+                        contRH++;
+                    } else if (radios[i].value === "segurança") {
+                        contSeguranca++;
+                    } else if (radios[i].value === "serviços") {
+                        contServicos++;
+                    }
+                }
+            }
+    
+            localStorage.setItem('porcAdm', `${contAdm * 10}%`);
+            localStorage.setItem('porcMarketing', `${contMarketing * 10}%`);
+            localStorage.setItem('porcComércio', `${contComércio * 10}%`);
+            localStorage.setItem('porcInfo', `${contInfo * 10}%`);
+            localStorage.setItem('porcRh', `${contRH * 10}%`);
+            localStorage.setItem('porcSegurança', `${contSeguranca * 10}%`);
+            localStorage.setItem('porcServiços', `${contServicos * 10}%`);
+    
+         
+                document.getElementById("adm").innerHTML = contAdm;
+            if (contAdm > contMarketing && contAdm > contComércio && contAdm > contInfo && contAdm > contRH && contAdm > contSeguranca && contAdm > contServicos) {
+                // Mostra a página de carregamento
+               
+                // Oculta a página de carregamento
+                window.location.href = ("adm.html");
+            
+                    // Oculta a página de carregamento após o redirecionamento
+                  
+            
+            } else if (contMarketing > contAdm && contMarketing > contComércio && contMarketing > contInfo && contMarketing > contRH && contMarketing > contSeguranca && contMarketing >= contServicos) {
+                window.location.href = "marketing.html";
+            
+            } else if (contComércio > contAdm && contComércio > contMarketing && contComércio > contInfo && contComércio > contRH && contComércio > contSeguranca && contComércio > contServicos) {
+               
+                window.location.href = "comercio.html";
+            
+            } else if (contInfo > contAdm && contInfo > contMarketing && contInfo > contComércio && contInfo > contRH && contInfo > contSeguranca && contInfo > contServicos) {
+                
+                window.location.href = "info.html";
+          
+            } else if (contRH > contAdm && contRH > contMarketing && contRH > contComércio && contRH > contInfo && contRH > contSeguranca && contRH > contServicos) {
+               
+                window.location.href = "rh.html";
+                
+            } else if (contSeguranca > contAdm && contSeguranca > contMarketing && contSeguranca > contComércio && contSeguranca > contInfo && contSeguranca > contRH && contSeguranca > contServicos) {
+               
+                window.location.href = "segurança.html";
+            
+            } else if (contServicos > contAdm && contServicos > contSeguranca && contServicos > contMarketing && contServicos > contComércio && contServicos > contInfo && contServicos > contRH)
+              
+            window.location.href = "serviços.html";
+             
+            
+
+        };
+    </script>
+    
+        
+    </body>
+    </html>
+</body>
+</html>
